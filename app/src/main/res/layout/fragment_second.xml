@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+
+    <EditText
+        android:id="@+id/editText2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/enter_code"
+        android:inputType="textPersonName"
+        android:maxLength="6"
+        android:textAlignment="center"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/txtState"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/progressBar"
+
+
+        android:layout_centerInParent="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="-54dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/editText2"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:max="60" />
+
+    <Button
+        android:id="@+id/btnFetch"
+        android:layout_width="114dp"
+        android:layout_height="42dp"
+
+        android:layout_below="@+id/editText2"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+
+        android:text="@string/Button_next"
+        android:visibility="invisible" />
+
+
+
+</RelativeLayout>
